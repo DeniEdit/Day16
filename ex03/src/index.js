@@ -1,12 +1,11 @@
 class Person {
-    constructor(message) {
-        this._message = message;
-    }
     static display() {
-        console.log("Static method is invoked from Person class");
+        var message = "Static method is invoked from Person class";
+        console.log(message);
+        return message;
     }
-    static show() {
-        
+    show() {
+        Person.display();
     }
 }
 var message = new Person();
