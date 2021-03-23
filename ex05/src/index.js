@@ -1,6 +1,6 @@
 class Microsoft {
     constructor(name) {
-        this._name = name;
+        this.name = name;
     }
     get name() {
         return this._name;
@@ -8,8 +8,8 @@ class Microsoft {
     set name(newName) {
         this._name = newName;
     }
-    static henry() {
-        console.log("William Henry Gates III");
+    occupation() {
+        return `${this.name} is a philanthropist!`;
     }
 }
 
@@ -19,16 +19,16 @@ class Facebook extends Microsoft {
         this.age = age;
     }
     studentAge() {
-        this.name = "{name}";
-        this.age = "{age}";
-        return this.name + " is " + this.age;
+        return `${this.name} is ${this.age}`;
     }
 
 }
+const henry = new Microsoft("William Henry Gates III");
+const elliot = new Facebook("Mark Elliot Zuckerberg", 23);
 
-let fb = new Facebook();
-console.log(fb.studentAge());
-Microsoft.henry();
+console.log(henry.occupation);
+console.log(elliot.occupation);
+console.log(elliot.studentAge());
 
 module.exports = {
     Microsoft,
