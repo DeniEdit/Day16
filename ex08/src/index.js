@@ -8,7 +8,7 @@ class Person {
         return `Name: ${this.name} , ${this.email} , ${this.age}`;
     }
 }
-const personInfo = new Person("{Deni}", "milicevic.deni@gmail.com", 27);
+const personInfo = new Person("{name}", "{email}", "{age}");
 console.log(personInfo);
 
 module.exports = Person;
