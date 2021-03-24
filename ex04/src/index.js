@@ -1,11 +1,12 @@
 class Pets {
     constructor(name, legs) {
-        this._name = name;
-        this._legs = legs;
+        this.name = name;
+        this.legs = legs;
     }
     walk() {
         var numberOfLegs;
-        return "Pujdo is walking on 4 legs" + super.walk;
+        console.log(`${this.name} is walking on ${this.legs}`);
+        return numberOfLegs;
     }
 }
 
@@ -15,8 +16,9 @@ class Dog extends Pets {
         this.legs = legs;
     }
     bark() {
-        var dogSay;
-        return "Pujdo says WUF-WUF" + super.dogSay;
+        let dogSay = "Pujdo says WUF-WUF";
+        console.log(dogSay);
+        return dogSay;
     }
 
 }
