@@ -1,13 +1,15 @@
 function firstName(firstName) {
-    firstName = firstName.toUpperCase();
+    var a = firstName.toUpperCase();
+    return a;
 }
 
 function lastName(lastName) {
-    lastName = lastName.toLowerCase();
+    var b = lastName.toLowerCase();
+    return b;
 }
 
-console.log(firstName("Deni"));
-console.log(lastName("Deni"));
+console.log(firstName("deni"));
+console.log(lastName("MILICEVIC"));
 
 module.exports = {
     firstName,
